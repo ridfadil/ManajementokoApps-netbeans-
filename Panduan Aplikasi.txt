@@ -1,0 +1,28 @@
+Di Buat Oleh : Muhamad Farid Padilah
+NIM	     : 1157050094
+Kelas        : RPL A.
+
+========================================== PANDUAN PEMAKAIAN APLIKASI MANAJEMEN TOKO ==================================
+
+1)Import Database yang ada di folder Database.
+2)open project pada Netbeans project berada di Folder Aplikasi -> appfix.
+3)Install semua Plugin dari folder paket library,caranya :
+	- Klik kanan Library
+	- add from JAR 
+	- copy semua Library yang ada di folder paket library 
+	- OK.
+
+#Catatan :
+ Password dan Username
+ 1.LOGIN ADMIN : USERNAME = admin
+	       : PASWORD  = admin
+
+ 2.LOGIN KASIR : USERNAME = kasir
+	       : PASSWORD = kasir
+
+ 3. File .JAR Aplikasi Terdapat di Aplikasi -> Appfix -> dist -> appfix.jar
+
+
+
+	
+	

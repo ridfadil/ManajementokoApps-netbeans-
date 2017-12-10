@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f29ddfb8-ea7f-4b10-a07e-8e3bc0544404">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     transaksikredit.`nomortransaksi` AS transaksikredit_nomortransaksi,
+     transaksikredit.`Tanggal` AS transaksikredit_Tanggal,
+     transaksikredit.`namapelanggan` AS transaksikredit_namapelanggan,
+     transaksikredit.`nomorktp` AS transaksikredit_nomorktp,
+     transaksikredit.`kodebarang` AS transaksikredit_kodebarang,
+     transaksikredit.`quantity` AS transaksikredit_quantity,
+     transaksikredit.`cicilan` AS transaksikredit_cicilan,
+     transaksikredit.`uangmuka` AS transaksikredit_uangmuka,
+     transaksikredit.`total` AS transaksikredit_total
+FROM
+     `transaksikredit` transaksikredit]]>
+	</queryString>
+	<field name="transaksikredit_nomortransaksi" class="java.lang.Integer"/>
+	<field name="transaksikredit_Tanggal" class="java.sql.Date"/>
+	<field name="transaksikredit_namapelanggan" class="java.lang.String"/>
+	<field name="transaksikredit_nomorktp" class="java.lang.String"/>
+	<field name="transaksikredit_kodebarang" class="java.lang.String"/>
+	<field name="transaksikredit_quantity" class="java.lang.String"/>
+	<field name="transaksikredit_cicilan" class="java.lang.String"/>
+	<field name="transaksikredit_uangmuka" class="java.lang.String"/>
+	<field name="transaksikredit_total" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="129" y="47" width="555" height="20" uuid="950a6cd3-828d-4b90-84bc-b03fa37de3d7"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Telp : 089233344444]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="129" y="24" width="555" height="20" uuid="53fb0fbe-b285-41d7-ad07-1ba60d9b4fa8"/>
+				<textElement textAlignment="Center">
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Jl. Sukajaya Kecamatan Ciwaru No.166 Kabupaten kuningan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="129" y="4" width="555" height="20" uuid="9df6c9b0-0ce2-4956-960d-449c67e01113"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[PT.Kuningan Makmur]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="61" width="802" height="1" uuid="1c42197a-9da7-44de-94b3-0bf34a20ed41"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="324" y="33" width="174" height="31" uuid="f5ed94a9-3e58-41c7-892c-f2e21a9a6934"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[DATA KREDIT BARANG]]></text>
+			</staticText>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="677" y="3" width="100" height="20" uuid="58f8df8a-5d25-4013-9384-48d67a2e4a15"/>
+				<textFieldExpression><![CDATA[new Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="623" y="3" width="54" height="20" uuid="eab5db8e-7d78-4177-9d56-251687e17dbb"/>
+				<text><![CDATA[Kuningan]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="21" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="90" height="20" uuid="5ebbf738-c504-4ea1-a4ea-68295e2e526b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="90" y="0" width="90" height="20" uuid="0e456e29-2d4b-4910-8a1f-e6400bee84c5"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="180" y="0" width="72" height="20" uuid="4e03f2c0-76a9-46b6-8892-ff33dd8a40bf"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="252" y="0" width="72" height="20" uuid="2e13e049-c1aa-43b2-a89c-ef0d0cf5055d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="324" y="0" width="72" height="20" uuid="ada9a951-86be-42a5-bd83-83f058230a7b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="396" y="0" width="72" height="20" uuid="90ac1d06-d880-484e-9b76-21bd8f126a04"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="468" y="0" width="72" height="20" uuid="5590e2d5-618f-4db8-a281-998486737309"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="540" y="0" width="72" height="20" uuid="0887fd26-9b6a-4e6b-ba95-af79234ee62b"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="90" height="20" uuid="92c9505d-b78d-4780-b670-5090e7fd1d95"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Nomor Transaksi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="0" width="90" height="20" uuid="6a339290-b69c-4997-8a33-8937a2b25645"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Tanggal Transaksi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="0" width="72" height="20" uuid="d74711b3-bd28-4f9a-a054-8404c9ca9100"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="252" y="0" width="72" height="20" uuid="e369b253-46e6-446b-8e4c-242fc71c21b9"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[KTP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="324" y="0" width="72" height="20" uuid="b6512890-df8a-4c6b-94fa-16cca7dea05c"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Kode Barang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="396" y="0" width="72" height="20" uuid="9018915f-18c2-4a2c-a040-6fdff05421d4"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Quantity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="0" width="70" height="20" uuid="ef10c21e-8e16-4cad-a264-da740f539065"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Cicilan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="540" y="0" width="72" height="20" uuid="286c9af3-aa80-4eb3-80fd-b9713bfd71da"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Uang Muka]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="612" y="0" width="72" height="20" uuid="6e2f2b36-f8c3-4410-8705-a34123b1ea26"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="612" y="0" width="72" height="20" uuid="925fa257-2725-4568-bc6f-e06ef3eb26fc"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="90" height="20" uuid="c6896507-4245-4839-9ee4-e5598fd67b38"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="90" y="0" width="90" height="20" uuid="de265d77-b71c-4206-9779-5282a21f5ef1"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="180" y="0" width="72" height="20" uuid="8be0a08d-3220-4720-a294-a91ee4756cf7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="252" y="0" width="72" height="20" uuid="9e7a9b59-98a9-4ac1-b6fc-e53fc04cbe4d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="324" y="0" width="72" height="20" uuid="92c95316-3d08-4bfc-9252-c8284ab0f5f0"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="396" y="0" width="72" height="20" uuid="1d5cc96f-9cba-42b9-8281-4c4253b1de57"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="468" y="0" width="72" height="20" uuid="972a4cd1-2646-4269-bc6e-6ccc5181bb86"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="540" y="0" width="72" height="20" uuid="a00b3526-b142-4836-a042-622c6f4d515b"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="0" width="90" height="20" uuid="01831b01-098d-44d8-8971-c4c3646c0ad6"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{transaksikredit_nomortransaksi}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="90" y="0" width="90" height="20" uuid="bf3db6ac-953a-4009-b99d-261f0ba3f190"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{transaksikredit_Tanggal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="0" width="72" height="20" uuid="8317b3cd-102e-4521-98ed-63811a39472f"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{transaksikredit_namapelanggan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="252" y="0" width="72" height="20" uuid="6d7325aa-ef64-468d-a7d7-484237609e17"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{transaksikredit_nomorktp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="324" y="0" width="72" height="20" uuid="9c911639-81e5-44c9-ae8a-f724c539ab6b"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{transaksikredit_kodebarang}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="396" y="0" width="72" height="20" uuid="9b3b4d2b-3c4c-437c-9c74-91fcdc8841ab"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{transaksikredit_quantity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="468" y="0" width="72" height="20" uuid="593d1721-2d75-4abb-a86c-84fb61e44a46"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{transaksikredit_cicilan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="540" y="0" width="72" height="20" uuid="20cd627b-53b8-4359-be51-afc266cd69bd"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{transaksikredit_uangmuka}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="612" y="0" width="72" height="20" uuid="da394235-77c7-465d-89be-c0a4c9955c94"/>
+			</rectangle>
+			<textField>
+				<reportElement x="612" y="0" width="72" height="20" uuid="c5968410-aa17-453c-a790-9b2cbfcab87a"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{transaksikredit_total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="1" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="155" splitType="Stretch">
+			<staticText>
+				<reportElement x="677" y="25" width="100" height="20" uuid="7f192e83-aeac-4029-981a-3d0a40bf5ae8"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Mengetahui]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="684" y="45" width="53" height="20" uuid="8953b6a0-1e87-4b90-9527-5531e6d41993"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Manager]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="677" y="124" width="89" height="20" uuid="0f52d061-5dcd-4174-8681-7fbe4b2c65bd"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[M Farid Padilah]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="135" width="80" height="20" uuid="0afc122a-2182-4473-8ecd-3a9de8139678"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="80" y="135" width="40" height="20" uuid="620e92c6-253b-45f3-b087-f5d95c4021dc"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="15" splitType="Stretch"/>
+	</summary>
+</jasperReport>
